@@ -5,4 +5,6 @@ import { Component, Vue } from 'vue-property-decorator';
         MyButton: require('../common/MyButton.vue.html')
     }
 })
-export default class HomeComponent extends Vue {}
+export default class HomeComponent extends Vue {
+    public greetText: string = "Hello";
+}
