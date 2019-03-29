@@ -10,7 +10,10 @@ module.exports = (env) => {
     return [{
         stats: { modules: false },
         context: __dirname,
-        resolve: { extensions: [ '.js', '.ts' ] },
+        resolve: 
+        { 
+            extensions: [ '.js', '.ts' ]
+        },
         entry: { 'main': './ClientApp/boot.ts' },
         module: {
             rules: [

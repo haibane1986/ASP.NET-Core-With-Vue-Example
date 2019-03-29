@@ -1,12 +1,13 @@
-import {Component, Vue, Prop} from "vue-property-decorator";
+import Vue from 'vue'
+import {Component, Prop, Emit} from "vue-property-decorator";
 
 @Component
 export default class MyButtonComponent extends Vue{
     @Prop()
     public greet?: string;
 
-    public onClick(){
+    @Emit('clicked')
+    private onClick() {
         alert(this.greet);
-        this.greet = "こんにちは"
     }
 }
