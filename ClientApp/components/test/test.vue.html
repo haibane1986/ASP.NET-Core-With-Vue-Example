@@ -1,0 +1,16 @@
+<template>
+    <div class="home">
+        <p>{{greetText}}</p>
+        <p>count: {{count}} </p>
+        <p v-if="isRegulars">thanks</p>
+        <p>
+            <my-button greet="Hello" :greet="greetText"/>
+            <MyButton class="my-button" :greet="greetText" @clicked="onMyButtonClicked">change slot value</MyButton>
+        </p>
+        <p>
+            <ResetButton initialValue="Reset Initial Value" v-model="greetText"></ResetButton>
+        </p>
+    </div>
+</template>
+
+<script src="./test.ts"></script>
