@@ -7,6 +7,14 @@
             <my-button greet="Hello" :greet="greetText"/>
             <MyButton class="my-button" :greet="greetText" @clicked="onMyButtonClicked">change slot value</MyButton>
         </p>
+        <div>
+            <small>Raised</small>
+            <md-button class="md-raised">Default</md-button>
+            <md-button class="md-raised" :md-ripple="false">Ripple Off</md-button>
+            <md-button class="md-raised md-primary">Primary</md-button>
+            <md-button class="md-raised md-accent">Accent</md-button>
+            <md-button class="md-raised" disabled>Disabled</md-button>
+        </div>
         <p>
             <ResetButton initialValue="Reset Initial Value" v-model="greetText"></ResetButton>
         </p>
@@ -16,6 +24,73 @@
                 <md-icon>menu</md-icon>
             </md-button>        
         </p>
+        <div>
+            <div>
+              <small>Flat</small>
+              <md-button class="md-icon-button">
+                <md-icon>home</md-icon>
+              </md-button>
+        
+              <md-button class="md-icon-button md-primary">
+                <md-icon>menu</md-icon>
+              </md-button>
+        
+              <md-button class="md-icon-button md-accent">
+                <md-icon>thumb_up</md-icon>
+              </md-button>
+        
+              <md-button class="md-icon-button" disabled>
+                <md-icon>add</md-icon>
+              </md-button>
+            </div>
+        
+            <div>
+              <small>Raised</small>
+              <md-button class="md-icon-button md-raised">
+                <md-icon>home</md-icon>
+              </md-button>
+        
+              <md-button class="md-icon-button md-raised md-primary">
+                <md-icon>menu</md-icon>
+              </md-button>
+        
+              <md-button class="md-icon-button md-raised md-accent">
+                <md-icon>thumb_up</md-icon>
+              </md-button>
+        
+              <md-button class="md-icon-button md-raised" disabled>
+                <md-icon>add</md-icon>
+              </md-button>
+            </div>
+        
+            <div>
+              <small>Dense</small>
+              <md-button class="md-icon-button md-dense md-primary">
+                <md-icon>person</md-icon>
+              </md-button>
+        
+              <md-button class="md-icon-button md-dense md-raised md-primary">
+                <md-icon>cached</md-icon>
+              </md-button>
+            </div>
+        </div>
+        <md-card md-with-hover>
+          <md-ripple>
+            <md-card-header>
+              <div class="md-title">Card with hover effect</div>
+              <div class="md-subhead">It also have a ripple</div>
+            </md-card-header>
+    
+            <md-card-content>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non.
+            </md-card-content>
+    
+            <md-card-actions>
+              <md-button>Action</md-button>
+              <md-button>Action</md-button>
+            </md-card-actions>
+          </md-ripple>
+        </md-card>
     </div>
 </template>
 
