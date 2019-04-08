@@ -1,5 +1,9 @@
 import Vue from 'vue'
 import {Component, Prop, Emit} from "vue-property-decorator";
+import { MdButton } from 'vue-material/dist/components'
+import 'vue-material/dist/vue-material.min.css'
+
+Vue.use(MdButton)
 
 @Component
 export default class MyButtonComponent extends Vue {
