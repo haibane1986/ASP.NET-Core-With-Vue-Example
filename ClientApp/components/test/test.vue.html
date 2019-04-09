@@ -1,5 +1,6 @@
 <template>
     <div class="home">
+        <md-button class="md-raised md-primary">Sample</md-button>
         <p>{{greetText}}</p>
         <p>count: {{count}} </p>
         <p v-if="isRegulars">thanks</p>
@@ -74,6 +75,8 @@
               </md-button>
             </div>
         </div>
+        <md-progress-bar md-mode="indeterminate"></md-progress-bar>
+        <md-progress-bar class="md-accent" md-mode="indeterminate"></md-progress-bar>
         <md-card md-with-hover>
           <md-ripple>
             <md-card-header>

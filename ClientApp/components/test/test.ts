@@ -1,5 +1,10 @@
 import { Component, Vue, Watch } from 'vue-property-decorator';
 import VueRouter from "vue-router";
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.min.css'
+import 'vue-material/dist/theme/default.css'
+
+Vue.use(VueMaterial)
 
 Component.registerHooks([
     'beforeRouteEnter'
@@ -7,8 +12,8 @@ Component.registerHooks([
 
 @Component({
     components: {
-        MyButton: require('../common/MyButton.vue.html'),
-        ResetButton: require('../common/ResetButton.vue.html')
+        MyButton: require('../common/MyButton.vue.html').default,
+        ResetButton: require('../common/ResetButton.vue.html').default
     }
 })
 export default class TestComponent extends Vue {
